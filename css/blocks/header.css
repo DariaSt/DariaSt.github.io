@@ -1,0 +1,38 @@
+.first-screen {
+  background: url(../../img/first-screen/texture.png) no-repeat, url(../../img/first-screen/first-scr-bg.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+  height: 100vh; }
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 9px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 8px; }
+
+.header__btn {
+  margin-right: 26px; }
+
+.header-btn__btn {
+  background-color: #e45028;
+  color: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 13px 15px;
+  border-radius: 5px; }
