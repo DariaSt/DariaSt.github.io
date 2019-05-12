@@ -1,0 +1,60 @@
+.first-screen{
+  background: url(../../img/first-screen/texture.png) no-repeat,
+   url(../../img/first-screen/first-scr-bg.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+  // height: 100vh;
+}
+
+.first-screen__container {
+  justify-content: flex-start;
+}
+
+.first-screen__content{
+  position: relative;
+  display: flex;
+  flex: .8;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 95px;
+}
+
+.first-screen__block-img{
+  margin-top: -30px;
+  padding-left: 15px;
+  width: 417px;
+  height: 424px;
+}
+
+.first-screen__text{
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.first-screen__title{
+  font-family: 'Gagalin_Regular', sans-serif;
+  font-size: 72px;
+  color: #f9b43b;
+  margin-bottom: 20px;
+}
+
+.first-screen__desc{
+  font-family: 'Lifehack_Medium';
+  letter-spacing: -1.63px;
+  font-size: 65px;
+  color: #fff;
+  line-height: 60px;
+}
+
+.scroll{
+  display: block;
+  position:absolute;
+  left: 50%;
+  bottom: -16%;
+  transform: translateX(-50%);
+}

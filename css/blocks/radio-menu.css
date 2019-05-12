@@ -1,0 +1,15 @@
+.radio-menu {
+  position: fixed;
+  top: 60%;
+  right: 60px;
+  z-index: 10; }
+
+.radio-menu__item {
+  margin-bottom: 20px; }
+
+.radio-menu__link {
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 16px;
+  height: 16px; }

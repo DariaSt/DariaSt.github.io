@@ -1,8 +1,12 @@
-@import './layout/normalize.css';
-@import './layout/fonts.css';
-@import './layout/base.css';
+@import './layout/normalize.scss';
+@import './layout/fonts.scss';
+@import './layout/base.scss';
 
-@import './blocks/header.css';
-@import './blocks/sidebar.css';
-@import './blocks/first-screen__content.css';
-@import './blocks/content-radio.css';
+@import './blocks/radio-menu.scss';
+
+@import './blocks/first-screen.scss';
+@import './blocks/header.scss';
+@import './blocks/sidebar.scss';
+
+@import './blocks/best.scss';
+@import './blocks/reviews.scss';

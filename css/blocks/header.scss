@@ -1,29 +1,22 @@
-.first-screen{
-  background: url(../../img/first-screen/texture.png) no-repeat, url(../../img/first-screen/first-scr-bg.png) no-repeat;
-  background-size: 100%;
-  position: relative;
-  height: 100vh;
-}
-
-.header__content{
-  // padding-right: 30px;
+.header{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding-top: 9px;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
   color: #ffffff; 
-  margin-bottom: 8px;
 }
 
-.header__btn{
-  margin-right: 26px;
+.header__buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.header-btn__btn{
+.btn{
+  display: inline-block;
   background-color: #e45028;
   color: inherit; 
   text-transform: inherit;
@@ -31,4 +24,8 @@
   font-weight: inherit;
   padding: 13px 15px; 
   border-radius: 5px;
+}
+
+.header__btn{
+  margin-left: 15px;
 }

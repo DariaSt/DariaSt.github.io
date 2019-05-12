@@ -2,9 +2,14 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
 }
 
+body{
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 * {
   margin: 0;
   padding: 0;
@@ -44,10 +49,11 @@ table {
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
-  height: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-width: 940px + 20px;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .wrapper-content {
@@ -57,10 +63,22 @@ table {
   justify-content: space-between;
 }
 
+.section{
+  height: 100vh;
+  min-height: 650px;
+}
+
 .container {
-  display: block;
+  // display: block;
   margin: 0 auto;
-  width: 970px;
-  // min-height: 650px;
+  width: 940px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
   height: 100%;
+}
+
+footer{
+  position: relative;
+  width: 100%;
 }
