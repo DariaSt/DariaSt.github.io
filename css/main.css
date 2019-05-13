@@ -421,6 +421,9 @@ table {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%; }
 
 footer {
@@ -461,7 +464,7 @@ footer {
 
 .first-screen {
   background: url(../../img/first-screen/texture.png) no-repeat, url(../../img/first-screen/first-scr-bg.png) no-repeat;
-  background-size: 100%;
+  background-size: cover;
   position: relative; }
 
 .first-screen__container {
@@ -605,6 +608,9 @@ footer {
   background: url("../../img/we/bg.jpg") center center/cover no-repeat;
   text-align: center; }
 
+.best__container {
+  margin-top: -70px; }
+
 .best__title {
   color: #2f3234;
   font-family: 'Gagalin_Regular', sans-serif;
@@ -649,7 +655,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  height: 100%; }
 
 .reviews__item {
   width: 25%;
