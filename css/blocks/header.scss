@@ -2,11 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 9px;
+  padding-top: rem(9px);
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   color: #ffffff; 
+}
+
+.header__logo{
+  width: rem(92px);
+  height: rem(69px);
 }
 
 .header__buttons{
@@ -22,10 +27,48 @@
   text-transform: inherit;
   font-size: inherit;
   font-weight: inherit;
-  padding: 13px 15px; 
-  border-radius: 5px;
+  padding: rem(13px) rem(15px); 
+  border-radius: rem(5px);
 }
 
 .header__btn{
-  margin-left: 15px;
+  margin-left: rem(15px);
+  @include tablets{
+    margin-right: rem(30px);
+  }
+}
+
+.hamburger{
+  width: rem(24px);
+  height: rem(4px);
+  background-color: #ffffff;
+  position: relative;
+  margin-top: rem(25px);
+  margin-bottom: rem(20px);
+  border-radius: rem(5px);
+  display: none;
+  @include tablets{
+    margin-right: rem(10px);
+    display: block;
+  }
+}
+
+.hamburger:after, .hamburger:before{
+  content:'';
+  border-radius: rem(5px);
+  display: block;
+  width: rem(24px);
+  height: rem(4px);
+  background-color: #fff;
+  position: absolute;
+}
+
+.hamburger:after{
+  top: 100%;
+  margin-top: rem(5px);
+}
+
+.hamburger:before{
+  bottom: 100%;
+  margin-bottom: rem(5px);
 }

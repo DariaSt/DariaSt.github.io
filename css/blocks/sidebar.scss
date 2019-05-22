@@ -2,13 +2,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-left: 15px;
+  margin-left: rem(15px);
+
+  @include tablets{
+    display: none;
+  }
 }
 
 .nav__item{
-  margin-left: 15px;
+  margin-left: rem(15px);
   position: relative;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 rem(20px);
 
   &::before{
     display: block;

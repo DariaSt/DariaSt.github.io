@@ -1,12 +1,23 @@
-@import './layout/normalize.scss';
-@import './layout/fonts.scss';
-@import './layout/base.scss';
+$tablets: 768px;
+$phones: 480px;
 
-@import './blocks/radio-menu.scss';
+@import "./layout/media.scss";
 
-@import './blocks/first-screen.scss';
-@import './blocks/header.scss';
-@import './blocks/sidebar.scss';
+@import "./layout/normalize.scss";
+@import "./layout/fonts.scss";
+@import "./layout/base.scss";
 
-@import './blocks/best.scss';
-@import './blocks/reviews.scss';
+@import "./blocks/radio-menu.scss";
+
+@import "./blocks/first-screen.scss";
+@import "./blocks/header.scss";
+@import "./blocks/sidebar.scss";
+
+@import "./blocks/best.scss";
+@import "./blocks/team.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/delivery.scss";
+@import "./blocks/contacts.scss";
+
+@import "./blocks/footer.scss";

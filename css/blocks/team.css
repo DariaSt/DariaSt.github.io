@@ -1,0 +1,78 @@
+.team {
+  background: url("../../img/team/team.png") center center/cover no-repeat;
+  position: relative; }
+
+.team__block {
+  height: 100%;
+  width: 49%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #2f3234;
+  opacity: 0.93;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 97px; }
+
+.team__title {
+  margin-bottom: 36px; }
+
+.team__item {
+  position: relative;
+  margin-bottom: 20px;
+  color: #ffffff; }
+  .team__item--active .team__element {
+    height: 100%;
+    padding-bottom: 21px; }
+  .team__item--active .team__member {
+    color: #f9b43b; }
+  .team__item--active .team__member::before {
+    background-image: url(../../img/team/up.png); }
+
+.team__member {
+  font-family: 'Gagalin_Regular';
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit; }
+  .team__member::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../../img/team/down.png);
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 7px;
+    padding-right: 10px; }
+
+.team__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: 0;
+  overflow: hidden;
+  padding-top: 17px; }
+
+.team__avatar {
+  padding: 0px 19px; }
+
+.team__text {
+  width: 208px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 24px; }
+
+.team__post {
+  font-weight: bold; }
+
+.team__desc {
+  font-weight: 300; }

@@ -2,6 +2,7 @@
   background: url(../../img/first-screen/texture.png) no-repeat,
    url(../../img/first-screen/first-scr-bg.png) no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   // height: 100vh;
 }
@@ -15,40 +16,54 @@
   display: flex;
   flex: .8;
   align-items: center;
-}
 
-.content{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 95px;
+  @include tablets{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: rem(70px);
+  }
+
+  @include phones{
+    // margin: auto;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 .first-screen__block-img{
-  margin-top: -30px;
-  padding-left: 15px;
-  width: 417px;
-  height: 424px;
+  margin-top: rem(-30px);
+  padding-left: rem(15px);
+  
+  @include tablets{
+    padding: 0;
+  }
+}
+
+.first-screen__img{
+  // max-width: 100%;
+  @include phones{
+    width: 80%; 
+    margin-left: 10%;
+   }
 }
 
 .first-screen__text{
-  margin-left: 60px;
-  margin-top: 40px;
-}
+  margin-left: rem(10px);
+  margin-top: rem(40px);
 
-.first-screen__title{
-  font-family: 'Gagalin_Regular', sans-serif;
-  font-size: 72px;
-  color: #f9b43b;
-  margin-bottom: 20px;
+  @include tablets{
+    text-align: center;
+    padding-left: 18%;
+    padding-right: 20%;
+  }
 }
 
 .first-screen__desc{
   font-family: 'Lifehack_Medium';
   letter-spacing: -1.63px;
-  font-size: 65px;
+  font-size: rem(65px);
   color: #fff;
-  line-height: 60px;
+  line-height: rem(60px);
 }
 
 .scroll{
@@ -57,4 +72,10 @@
   left: 50%;
   bottom: -16%;
   transform: translateX(-50%);
+}
+
+.scroll__img{
+  max-width: 100%;
+  width: rem(29px);
+  height: rem(14px);
 }
