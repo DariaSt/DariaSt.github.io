@@ -517,6 +517,7 @@ table {
       margin-top: 4.375rem; } }
   @media screen and (max-width: 480px) {
     .first-screen__content {
+      width: 100%;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -550,6 +551,9 @@ table {
   font-size: 4.0625rem;
   color: #fff;
   line-height: 3.75rem; }
+  @media screen and (max-width: 480px) {
+    .first-screen__desc {
+      font-size: 3.375rem; } }
 
 .scroll {
   display: block;
@@ -1092,12 +1096,6 @@ table {
   margin-bottom: 1.0625rem; }
   @media screen and (max-width: 768px) {
     .review__desc {
-      padding-left: 10%;
-      padding-right: 10%;
-      text-align: center;
-      margin-bottom: 1.875rem; } }
-  @media screen and (max-width: 480px) {
-    .review__desc {
       display: none; } }
 
 .review__link {
@@ -1111,10 +1109,10 @@ table {
   border-radius: 3px; }
   @media screen and (max-width: 768px) {
     .review__link {
-      margin-left: 35%; } }
-  @media screen and (max-width: 480px) {
-    .review__link {
-      margin: 13% 21% 0; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 1.875rem auto 0; }
       .review__link span {
         display: none; }
       .review__link:after {

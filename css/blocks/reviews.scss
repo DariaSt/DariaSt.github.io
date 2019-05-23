@@ -64,14 +64,14 @@
   line-height: 24px;
   margin-bottom: rem(17px);
 
-  @include tablets {
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-    margin-bottom: rem(30px);
-  }
+  // @include tablets {
+  //   padding-left: 10%;
+  //   padding-right: 10%;
+  //   text-align: center;
+  //   margin-bottom: rem(30px);
+  // }
 
-  @include phones{
+  @include tablets{
     display: none;
   }
 }
@@ -86,13 +86,13 @@
   background-color: #2f3234;
   border-radius: 3px;
 
-  @include tablets {
-    margin-left: 35%;
-  }
+  // @include tablets {
+  //   margin-left: 35%;
+  // }
 
-  @include phones{
-    margin: 13% 21% 0;
-    // margin-top: 13%;
+  @include tablets{
+    display: flex;
+    margin: rem(30px) auto 0;
 
     span{
       display: none;

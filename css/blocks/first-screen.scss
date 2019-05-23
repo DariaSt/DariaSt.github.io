@@ -25,6 +25,7 @@
 
   @include phones{
     // margin: auto;
+    width: 100%;
     justify-content: center;
     align-content: center;
   }
@@ -64,6 +65,10 @@
   font-size: rem(65px);
   color: #fff;
   line-height: rem(60px);
+
+  @include phones{
+    font-size: rem(54px);
+  }
 }
 
 .scroll{
