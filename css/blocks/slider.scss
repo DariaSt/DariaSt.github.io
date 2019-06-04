@@ -11,15 +11,18 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 
     @include tablets{
-      margin-top:rem(40px);
+      margin-top: 0;
     }
 
-    @include phones{
-      margin-top: 0;
-      width: 100%;
-    }
+    // @include phones{
+    //   width: 100%;
+    // }
+  }
+
+  &__buttons{
   }
 
   &__prev, &__next{
@@ -36,17 +39,33 @@
     transform: rotate(-90deg);
   }
 
+  &__list{
+    overflow: hidden;
+    // padding: 100px 0;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  // &__group-item{
+  //   width: 100%;
+  //   display: flex;
+  //   position: relative;
+  // }
+
   &__item{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    position: relative;
+    // width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    
     @include tablets{
       flex-direction: column;
       text-align: center;
-      width: 90%;
-      padding: 0 rem(40px);
     }
 
     @include phones{
@@ -57,7 +76,9 @@
 
   &__images{
     flex: 1;
-    // position: relative;
+    @include tablets{
+      position: relative;
+    }
   }
 
   &-images__contain, &-images__kkl{
@@ -65,41 +86,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
     color: #ffffff;
     font-family: 'Gagalin_Regular';
     font-size: rem(14px);
+    width: rem(90px);
   }
 
   &-images__contain{
-    width: rem(90px);
     background-color: rgb(240,140,51);
     padding: rem(10px) 0;
     border-radius: 4px;
-    top: rem(-69px);
 
-    @include tablets{
-      top: rem(-90px);
-      left: 20%;
-    }
+    // @include tablets{
+    //   top: rem(-90px);
+    //   left: 20%;
+    // }
 
-    @include phones{
-      top: rem(45px);
-      left: 0;
-    }
+    // @include phones{
+    //   top: rem(45px);
+    //   left: 0;
+    // }
   }
 
   &-images__kkl{
     opacity: .5;
 
     @include tablets{
-      width: rem(95px);
-      top: rem(-87px);
-      right: 20%;
-    }
-
-    @include phones{
-      top:rem(40px);
+      position: absolute;
+      top: 0;
       right: 0;
     }
   }

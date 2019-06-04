@@ -285,3 +285,34 @@ input[type="checkbox"]:checked + label:after {
   font-weight: inherit;
   color: inherit;
 }
+
+.delivery__popup{
+  display: none;
+
+  &--active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(#000000, 0.9);
+    color: #cdd1da;
+
+  }
+}
+
+.popup__content{
+    width: rem(450px);
+    height: rem(200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.popup__button{
+
+}

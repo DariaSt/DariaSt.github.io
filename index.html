@@ -142,13 +142,43 @@
       <section class="section slider" id="slider">
         <div class="container slider__container">
           <div class="slider__wrapper">
-            <button type="button" class="slider__buttons">
+            <button type="button" class="slider__buttons slider__but-left">
               <svg class="slider__prev">
                 <use xlink:href='./css/sprite.svg#arrow-scroll'></use>
               </svg>
             </button>
-            <ul class="slider__list">
-                <li class="slider__item">
+            <ul class="slider__list owl-carousel">
+                <!-- <div class='slider__group-item'> -->
+                  <li class="slider__item">
+                      <div class="slider__images">
+                          <div class="slider-images__contain">
+                            <svg class="slider__svg">
+                              <use xlink:href='./css/sprite.svg#burger'></use>
+                            </svg>
+                            <p class="slider-images__caption">состав</p>
+                          </div>
+                          <div class="slider-images__burger">
+                            <img src="./img/burgers-slider/dark-burger.png" alt="Бургер" class="slider__img">
+                          </div>
+                          <div class="slider-images__kkl">
+                            <svg class="slider__svg">
+                              <use xlink:href='./css/sprite.svg#kkl'></use>
+                            </svg>
+                            <p class="slider-images__caption">ккал</p>
+                          </div>
+                        </div>
+                        <div class="slider__text">
+                          <h3 class="slider__title">Dark BEEF Burger</h3>
+                          <p class="slider__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                          <div class="slider__order-row">
+                            <span class="slider__cost">500 <span>рублей</span></span>
+                            <button type="button" class="btn">
+                              <span class="btn__text">Заказать</span>
+                            </button>
+                          </div>
+                        </div>
+                  </li>
+                  <li class="slider__item">
                     <div class="slider__images">
                         <div class="slider-images__contain">
                           <svg class="slider__svg">
@@ -165,9 +195,9 @@
                           </svg>
                           <p class="slider-images__caption">ккал</p>
                         </div>
-                      </div>
-                      <div class="slider__text">
-                        <h3 class="slider__title">Dark BEEF Burger</h3>
+                    </div>
+                    <div class="slider__text">
+                        <h3 class="slider__title">#2 Dark BEEF Burger</h3>
                         <p class="slider__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
                         <div class="slider__order-row">
                           <span class="slider__cost">500 <span>рублей</span></span>
@@ -175,10 +205,40 @@
                             <span class="btn__text">Заказать</span>
                           </button>
                         </div>
-                      </div>
-                </li>
-              </ul>
-            <button type="button" class="slider__buttons">
+                    </div>
+                  </li>
+                  <li class="slider__item">
+                      <div class="slider__images">
+                          <div class="slider-images__contain">
+                            <svg class="slider__svg">
+                              <use xlink:href='./css/sprite.svg#burger'></use>
+                            </svg>
+                            <p class="slider-images__caption">состав</p>
+                          </div>
+                          <div class="slider-images__burger">
+                            <img src="./img/burgers-slider/dark-burger.png" alt="Бургер" class="slider__img">
+                          </div>
+                          <div class="slider-images__kkl">
+                            <svg class="slider__svg">
+                              <use xlink:href='./css/sprite.svg#kkl'></use>
+                            </svg>
+                            <p class="slider-images__caption">ккал</p>
+                          </div>
+                        </div>
+                        <div class="slider__text">
+                          <h3 class="slider__title">#3 Dark BEEF Burger</h3>
+                          <p class="slider__desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                          <div class="slider__order-row">
+                            <span class="slider__cost">500 <span>рублей</span></span>
+                            <button type="button" class="btn">
+                              <span class="btn__text">Заказать</span>
+                            </button>
+                          </div>
+                        </div>
+                  </li>
+                <!-- </div> -->
+            </ul>
+            <button type="button" class="slider__buttons slider__but-right">
               <svg class="slider__next">
                 <use xlink:href='./css/sprite.svg#arrow-scroll'></use>
               </svg>
@@ -357,6 +417,7 @@
                   </label>
                   <input
                       type="text"
+                      name="name"
                       id="text-name"
                       class="form__input form__field"
                     />
@@ -370,6 +431,7 @@
                   </label>
                   <input
                         type="text"
+                        name="phone"
                         id="text-phone"
                         placeholder="89212264923"
                         class="form__input form__field"
@@ -446,7 +508,7 @@
                 <label for="textarea" class="form__label">
                   <div class="form__text">Комментарий</div>
                   <textarea
-                    name=""
+                    name="comment"
                     id="textarea"
                     class="form__textarea form__field"
                   >
@@ -500,6 +562,11 @@
           </form>
         </div>
       </section>
+      <div class="delivery__popup">
+          <div class="popup__content">
+            <button class="popup__button btn">Закрыть</button>
+          </div>
+      </div>
 
       <section class="section contacts" id="contacts">
           <footer class="footer">
@@ -550,6 +617,11 @@
       
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/slider.js"></script>
   <script src="./js/hamburger-menu.js"></script>
+  <script src="./js/accordeon.js"></script>
+  <script src="./js/form.js"></script>
 </body>
 </html>

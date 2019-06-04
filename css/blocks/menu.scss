@@ -5,6 +5,7 @@
   font-family: "Gagalin_Regular";
 
   &__subtitle-text {
+    cursor: pointer;
     font-size: rem(40px);
     text-transform: uppercase;
     white-space: nowrap;
@@ -95,6 +96,7 @@
 
     .menu__subtitle-text{
       left: -130%;
+      color: #f9b43b;
     }
   }
 }
