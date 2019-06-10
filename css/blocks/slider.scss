@@ -1,11 +1,44 @@
-.slider{
-  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
-  
-  &__container{
+.slider {
+  background-image: linear-gradient(
+    to top,
+    #f9b43b 0%,
+    #eb8c38 48%,
+    #f9b43b 74%,
+    #f9b43b 100%
+  );
+
+  &__composition-list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  &__composition-item {
+    display: flex;
+    align-items: center;
+    color: #000;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  &__composition-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__container {
     max-width: rem(1003px);
   }
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     flex: row;
     justify-content: center;
@@ -13,7 +46,7 @@
     position: relative;
     width: 100%;
 
-    @include tablets{
+    @include tablets {
       margin-top: 0;
     }
 
@@ -22,24 +55,25 @@
     // }
   }
 
-  &__buttons{
+  &__buttons {
   }
 
-  &__prev, &__next{
+  &__prev,
+  &__next {
     max-width: 100%;
     width: rem(29px);
     height: rem(14px);
   }
-  
-  &__prev{
+
+  &__prev {
     transform: rotate(90deg);
   }
 
-  &__next{
+  &__next {
     transform: rotate(-90deg);
   }
 
-  &__list{
+  &__list {
     overflow: hidden;
     // padding: 100px 0;
     width: 100%;
@@ -53,7 +87,7 @@
   //   position: relative;
   // }
 
-  &__item{
+  &__item {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -62,40 +96,54 @@
     // width: 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    
-    @include tablets{
+
+    @include tablets {
       flex-direction: column;
       text-align: center;
     }
 
-    @include phones{
+    @include phones {
       width: 100%;
       padding: 0;
     }
   }
 
-  &__images{
+  &__images {
     flex: 1;
-    @include tablets{
+    @include tablets {
       position: relative;
     }
   }
 
-  &-images__contain, &-images__kkl{
+  // &__product-block{
+  //   display: flex;
+  //   flex-direction: row;
+  // }
+
+  &-images__contain,
+  &-images__kkl {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-family: 'Gagalin_Regular';
+    font-family: "Gagalin_Regular";
     font-size: rem(14px);
     width: rem(90px);
   }
 
-  &-images__contain{
-    background-color: rgb(240,140,51);
+  &-images__contain {
+    cursor: pointer;
+    position: absolute;
+    background-color: rgb(240, 140, 51);
     padding: rem(10px) 0;
     border-radius: 4px;
+    &:hover{
+      background-color: #e35028;
+      .slider__composition-list {
+        display: block;
+      }
+    }
 
     // @include tablets{
     //   top: rem(-90px);
@@ -108,108 +156,114 @@
     // }
   }
 
-  &-images__kkl{
-    opacity: .5;
+  &-images__kkl {
+    opacity: 0.5;
 
-    @include tablets{
+    @include tablets {
       position: absolute;
       top: 0;
       right: 0;
     }
   }
-  
-  &__svg{
+
+  &__svg {
     width: rem(45px);
     height: rem(45px);
     margin-bottom: rem(10px);
   }
 
-  &__img{
+  &__img {
     max-width: rem(505px);
     margin-left: -25px;
-    @include tablets{
+    @include tablets {
       margin-bottom: rem(45px);
-     }
+    }
 
-    @include phones{
+    @include phones {
       max-width: rem(404px);
       margin-top: 150px;
       margin-bottom: rem(20px);
     }
   }
 
-  &__text{
+  &__text {
     flex: 1;
     color: #ffffff;
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-size: rem(14px);
     font-weight: 300;
     line-height: rem(23.97px);
-    @include tablets{
+    @include tablets {
       width: 90%;
     }
 
-    @include phones{
+    @include phones {
       width: 100%;
       font-size: rem(16px);
       // padding: 0;
     }
   }
 
-  &__title{
-    font-family: 'Gagalin_Regular';
+  &__title {
+    font-family: "Gagalin_Regular";
     font-size: rem(72px);
     font-weight: 400;
     line-height: rem(63.93px);
     margin-bottom: rem(40px);
     text-transform: uppercase;
 
-    @include tablets{
+    @include tablets {
       margin-bottom: rem(56px);
     }
 
-    @include phones{
+    @include phones {
       margin-bottom: rem(20px);
       font-size: rem(60px);
     }
   }
 
-  &__desc{
+  &__desc {
     margin-bottom: rem(36px);
 
-    @include tablets{
+    @include tablets {
       margin-bottom: rem(60px);
       width: 100%;
     }
-
   }
 
-  &__order-row{
+  &__order-row {
     display: flex;
     align-items: baseline;
 
-    @include tablets{
+    @include tablets {
       justify-content: center;
     }
   }
 
-  &__cost{
+  &__cost {
     color: #e35028;
-    font-family: 'Gagalin_Regular';
+    font-family: "Gagalin_Regular";
     font-size: rem(72px);
 
-    @include phones{
+    @include phones {
       font-size: rem(55px);
     }
-    span{
+    span {
       font-size: rem(30px);
       margin-left: rem(-20px);
       margin-right: rem(30px);
 
-      @include phones{
+      @include phones {
         margin-left: rem(-10px);
         font-size: rem(25px);
       }
     }
+  }
+}
+
+.product {
+  &__img {
+    width: rem(38px);
+    height: rem(38px);
   }
 }

@@ -1,50 +1,50 @@
-.best{
-  background: url('../../img/we/bg.jpg') center center / cover no-repeat;
+.best {
+  background: url("../../img/we/bg.jpg") center center / cover no-repeat;
   text-align: center;
 }
 
-.best__container{
-  margin-top: rem(-70px);
+.best__container {
+  // margin-top: rem(-70px);
 
-  @include tablets{
+  @include tablets {
     margin-top: rem(-140px);
   }
 
-  @include phones{
+  @include phones {
     margin-top: rem(-70px);
     width: 100%;
     padding: 0;
   }
 }
 
-.best__title{
+.best__title {
   color: #2f3234;
-  font-family: 'Gagalin_Regular', sans-serif;
+  font-family: "Gagalin_Regular", sans-serif;
   font-size: rem(72px);
   text-transform: uppercase;
   margin-top: rem(125px);
   margin-bottom: rem(40px);
 
-  @include phones{
+  @include phones {
     margin-bottom: rem(25px);
     font-size: rem(55px);
   }
 }
 
-.best__list{
+.best__list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 
-  @include phones{
+  @include phones {
     flex-direction: column;
   }
 }
 
-.best__item{
+.best__item {
   width: rem(290px);
 
-  @include phones{
+  @include phones {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -52,35 +52,35 @@
   }
 }
 
-.best-item__img{
+.best-item__img {
   margin-bottom: rem(25px);
   width: rem(97px);
   height: rem(89px);
 
-  @include tablets{
+  @include tablets {
     margin-bottom: rem(50px);
   }
 
-  @include phones{
+  @include phones {
     width: 30%;
   }
 }
 
-.img-natural{
+.img-natural {
   margin-bottom: rem(35px);
   width: rem(88px);
   height: rem(75px);
 
-  @include tablets{
+  @include tablets {
     margin-bottom: rem(60px);
   }
-  @include phones{
+  @include phones {
     width: 30%;
   }
 }
 
-.best__text{
-  @include phones{
+.best__text {
+  @include phones {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -88,20 +88,20 @@
   }
 }
 
-.best-item__title{
+.best-item__title {
   color: #2f3234;
-  font-family: 'Lifehack_Medium';
+  font-family: "Lifehack_Medium";
   // font-size: rem(24px);
   font-size: 24px;
   letter-spacing: -0.6px;
   margin-bottom: rem(20px);
 
-  @include phones{
+  @include phones {
     font-size: 24px;
   }
 }
 
-.best-item__text{
+.best-item__text {
   opacity: 0.8;
   color: #2f3234;
   // font-size: rem(14px);

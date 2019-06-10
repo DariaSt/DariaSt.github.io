@@ -1,0 +1,14 @@
+.howWeWork{
+  background: url('../../img/howWeWork/BG_.png') center center / cover no-repeat;
+  position: relative;
+
+  &__title{
+    color: #2f3234;
+    text-align: center;
+  }
+}
+
+.video{
+  width: rem(660px);
+  margin: 0 auto;
+}

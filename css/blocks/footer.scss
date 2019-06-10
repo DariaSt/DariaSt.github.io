@@ -5,6 +5,7 @@ footer {
   bottom: 0;
   background-color: rgb(16, 16, 16);
   height: rem(60px);
+  z-index: 5;
 
   @include phones{
     height: rem(116px);
@@ -80,9 +81,16 @@ footer {
   &:last-child {
     padding-right: 0;
   }
+
+  &:hover{
+    .social__ico{
+      opacity: 1;
+    }
+  }
 }
 
 .social__ico {
+  fill: #fff;
   width: rem(23px);
   height: rem(18px);
   opacity: 0.3;
